@@ -41,7 +41,6 @@ export const signup = async (req, res) => {
         profilePic: newUser.profilePic,
       });
 
-      console.log("Users with null email:", user);
     } else {
       res.status(400).json({ message: "Invalid user data" });
     }
